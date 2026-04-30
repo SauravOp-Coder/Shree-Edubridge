@@ -1,7 +1,7 @@
 /* EduWorld International - Free booking integrations */
 const BOOKING_CONFIG = {
-  primaryWhatsApp: "917378424424",
-  secondaryWhatsApp: "919623738229",
+  primaryWhatsApp: "919623738266",
+  secondaryWhatsApp: "919623738266",
   businessEmail: "shreeeduworldint@gmail.com",
   formspreeEndpoint: "", // paste free Formspree endpoint here
   googleSheetEndpoint: "", // paste free Google Apps Script Web App URL here
@@ -16,11 +16,63 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-open-meeting]').forEach(btn => btn.addEventListener('click', openMeeting));
 
   const modal = document.getElementById('meetingModal');
-  const closeBtn = document.querySelector('.modal-close');
+  const closeBtn = modal?.querySelector('.modal-close');
   if (closeBtn) closeBtn.addEventListener('click', closeMeeting);
   if (modal) modal.addEventListener('click', e => { if (e.target === modal) closeMeeting(); });
 
   document.querySelectorAll('.faq-item').forEach(item => item.querySelector('.faq-q')?.addEventListener('click', () => item.classList.toggle('active')));
+
+  const blogDetails = {
+    'russia-vs-kyrgyzstan': {
+      title:'MBBS in Russia vs Kyrgyzstan',
+      summary:'Understand the differences in tuition, campus life, recognition, and overall support for Indian students.',
+      image:'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80',
+      paragraphs:[
+        'Russia offers long-standing medical universities with strong academic infrastructure, while Kyrgyzstan is known for lower costs and simpler admission requirements.',
+        'This comparison helps you choose based on budget, weather, city comfort, FMGE/NEXT preparation, and student community support.'
+      ]
+    },
+    'documents-required': {
+      title:'Documents required for MBBS abroad',
+      summary:'A clear checklist for passports, academic records, medical certificates, and admission paperwork.',
+      image:'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
+      paragraphs:[
+        'Collect all transcripts, passports, photographs, medical reports, and notarized documents before applying to universities.',
+        'A complete file speeds up admission and visa approval, and avoids last-minute delays during travel preparation.'
+      ]
+    },
+    'visa-arrival': {
+      title:'What happens after visa approval',
+      summary:'Travel planning, airport pickup, university arrival, and early orientation support for new students.',
+      image:'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80',
+      paragraphs:[
+        'After visa approval, confirm your flight, pack the right documents, and ask your consultancy for airport pickup and hostel arrival assistance.',
+        'Early arrival support includes university registration guidance, local SIM setup, and tips for settling into hostels safely.'
+      ]
+    }
+  };
+
+  const blogModal = document.getElementById('blogModal');
+  const blogClose = document.querySelector('.blog-close');
+  const blogImage = document.querySelector('.blog-modal-image');
+  const blogTitle = document.querySelector('.blog-modal-title-main');
+  const blogSummary = document.querySelector('.blog-modal-summary');
+  const blogTextNodes = document.querySelectorAll('.blog-modal-text');
+  const blogContactBtn = document.querySelector('.blog-contact-btn');
+
+  document.querySelectorAll('.blog-card').forEach(card => card.addEventListener('click', () => {
+    const details = blogDetails[card.dataset.blog];
+    if (!details) return;
+    if (blogImage) blogImage.src = details.image;
+    if (blogTitle) blogTitle.textContent = details.title;
+    if (blogSummary) blogSummary.textContent = details.summary;
+    blogTextNodes.forEach((node, index) => node.textContent = details.paragraphs[index] || '');
+    if (blogModal) blogModal.classList.add('show');
+  }));
+
+  if (blogClose) blogClose.addEventListener('click', () => blogModal?.classList.remove('show'));
+  if (blogModal) blogModal.addEventListener('click', e => { if (e.target === blogModal) blogModal.classList.remove('show'); });
+  if (blogContactBtn) blogContactBtn.addEventListener('click', openMeeting);
 
   const countrySearch = document.getElementById('countrySearch');
   const countryFilter = document.getElementById('countryFilter');

@@ -1,4 +1,28 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EduWorld International | MBBS Abroad Consultancy</title><meta name="description" content="EduWorld International helps students explore MBBS in Russia, Kyrgyzstan, Uzbekistan and Georgia with counselling, admission support, visa guidance, and free consultation meetings."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shree EduWorld International | MBBS Abroad Consultancy in India</title>
+<meta name="description" content="Shree EduWorld International is a student-led MBBS abroad consultancy helping Indian students with counselling, university selection, admission support, visa guidance and free consultation meetings.">
+<meta name="keywords" content="MBBS abroad consultancy India, Shree EduWorld International, study MBBS Russia, MBBS Kyrgyzstan, MBBS Uzbekistan, MBBS Georgia, MBBS admission counselling">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourdomain.com/index.html">
+
+<meta property="og:title" content="Shree EduWorld International | MBBS Abroad Consultancy">
+<meta property="og:description" content="Student-led guidance and counselling for MBBS abroad admissions in Russia, Kyrgyzstan, Uzbekistan and Georgia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com/index.html">
+<meta property="og:image" content="https://yourdomain.com/assets/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+
 <style>
 /* Premium Sliding Notification Posters */
 .premium-notify{
@@ -96,6 +120,38 @@
   from{ transform: translateX(0); }
   to{ transform: translateX(-50%); }
 }
+.uni-img{
+  width:100%;
+  height:185px;
+  object-fit:cover;
+  border-radius:22px;
+  margin-bottom:18px;
+  display:block;
+}
+.uni-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px;
+}
+.uni-actions .btn{
+  padding:10px 14px;
+  font-size:.9rem;
+}
+.footer{overflow:hidden;}
+.footer > p{
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 16px 22px;
+  color:#b4c7f6;
+}
+.review-card span{
+  display:block;
+  margin-top:6px;
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.5;
+}
 @media (max-width: 860px){
   .premium-notify-shell{
     grid-template-columns: 1fr;
@@ -108,6 +164,11 @@
   .notify-icon{ width: 30px; height: 30px; border-radius: 11px; }
   .notify-track{ animation-duration: 24s; }
 }
+@media (max-width: 768px){
+  .uni-img{height:165px}
+  .uni-actions .btn{width:100%;justify-content:center}
+  .footer-grid{padding-left:16px;padding-right:16px}
+}
 @media (max-width: 520px){
   .premium-notify-shell{ width: min(100% - 20px, 1180px); }
   .notify-marquee{ mask-image: none; -webkit-mask-image: none; }
@@ -115,10 +176,119 @@
 }
 </style>
 
-</head><body><div class="topbar"><div class="container inner"><span><i class="fa-solid fa-envelope"></i> shreeeduworldint@gmail.com</span><span><i class="fa-solid fa-phone"></i> +91 73784 24424 / +91 96237 38229 &nbsp; · &nbsp; MBBS counselling for Russia, Kyrgyzstan, Uzbekistan & Georgia</span></div></div>
-<header class="header"><div class="container navbar"><a class="logo" href="index.html"><img src="assets/logo.png" alt="EduWorld International logo"><div class="logo-text"><strong>EduWorld International</strong><span>MBBS Abroad Consultancy</span></div></a><nav class="nav-links"><a href="index.html" class="active">Home</a><a href="about.html" class="">About</a><a href="services.html" class="">Services</a><a href="countries.html" class="">Countries</a><a href="universities.html" class="">Universities</a><a href="blog.html" class="">Blog</a><a href="contact.html" class="">Contact</a></nav><div class="nav-actions"><button class="btn btn-primary" data-open-meeting>Book Free Meeting</button><button class="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button></div></div></header>
+<style>
+  .reviews-slider{
+  overflow:hidden;
+  position:relative;
+  margin-top:36px;
+}
+.reviews-track{
+  display:flex;
+  gap:22px;
+  width:max-content;
+  animation:reviewSlide 45s linear infinite;
+}
+.reviews-slider:hover .reviews-track{
+  animation-play-state:paused;
+}
+.review-card{
+  width:360px;
+  min-height:260px;
+  padding:26px;
+  border-radius:0px;
+  background:#fff;
+  border:1px solid rgba(7,31,87,.08);
+  box-shadow:0 18px 45px rgba(7,31,87,.10);
+}
+.review-stars{
+  color:#f7931a;
+  margin-bottom:14px;
+  letter-spacing:2px;
+}
+.review-card p{
+  color:var(--muted);
+  line-height:1.75;
+  margin:0 0 18px;
+}
+.review-card strong{
+  display:block;
+  color:var(--navy);
+  font-size:1rem;
+}
+.review-card span{
+  display:block;
+  margin-top:6px;
+  color:var(--muted);
+  font-size:.9rem;
+}
+@keyframes reviewSlide{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+@media(max-width:768px){
+  .review-card{
+    width:300px;
+    min-height:280px;
+  }
+}
+</style>
 
-<!-- Premium Sliding Notification Posters -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Shree EduWorld International",
+  "url": "https://yourdomain.com/",
+  "logo": "https://yourdomain.com/assets/logo.png",
+  "email": "shreeeduworldint@gmail.com",
+  "telephone": "+91-9623738266",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN",
+    "addressRegion": "Maharashtra",
+    "addressLocality": "Pune, Latur, Nanded, Beed, Parbhani"
+  },
+  "sameAs": ["https://instagram.com/Shreeeduworldint"]
+}
+</script>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container inner">
+    <span><i class="fa-solid fa-envelope"></i> shreeeduworldint@gmail.com</span>
+    <span><i class="fa-solid fa-phone"></i> +91 96237 38266 / +91 73784 24424 / +91 96237 38229 &nbsp; · &nbsp; MBBS counselling for Russia, Kyrgyzstan, Uzbekistan & Georgia</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container navbar">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.png" alt="EduWorld International logo">
+      <div class="logo-text">
+        <strong>EduWorld International</strong>
+        <span>MBBS Abroad Consultancy</span>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="countries.html">Countries</a>
+      <a href="universities.html">Universities</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-primary" data-open-meeting>Book Free Meeting</button>
+      <button class="menu-btn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
 <section class="premium-notify" aria-label="Latest MBBS admission updates">
   <div class="premium-notify-shell">
     <div class="notify-label">
@@ -143,7 +313,6 @@
           <span><strong>35+ Universities</strong> Compare country-wise MBBS university options</span>
         </a>
 
-        <!-- duplicate posters for smooth infinite loop -->
         <a href="countries.html" class="notify-poster">
           <span class="notify-icon"><i class="fa-solid fa-graduation-cap"></i></span>
           <span><strong>Admissions Open 2026</strong> MBBS in Russia, Kyrgyzstan, Uzbekistan & Georgia</span>
@@ -169,16 +338,19 @@
       <span class="eyebrow">Trusted MBBS Abroad Guidance</span>
       <h1>Study <span class="accent">MBBS</span> abroad with a cleaner, smarter, more premium student journey.</h1>
       <p>EduWorld International helps students and parents confidently plan MBBS admissions in Russia, Kyrgyzstan, Uzbekistan and Georgia with counselling, university shortlisting, document support, visa guidance, and travel assistance.</p>
+
       <div class="hero-actions">
         <button class="btn btn-primary" data-open-meeting>Book Free Meeting</button>
         <a class="btn btn-outline" href="countries.html">Explore Countries</a>
       </div>
+
       <div class="hero-stats">
         <div class="mini-stat"><strong>4</strong><span>Focused MBBS destinations</span></div>
         <div class="mini-stat"><strong>35+</strong><span>University options highlighted</span></div>
         <div class="mini-stat"><strong>6-step</strong><span>Admission process support</span></div>
       </div>
     </div>
+
     <div class="hero-visual">
       <div class="hero-panel"></div>
       <div class="hero-orbit one"></div>
@@ -186,7 +358,7 @@
       <div class="hero-image"></div>
       <div class="float-card top"><strong>4 MBBS destinations</strong><p>Russia, Kyrgyzstan, Uzbekistan and Georgia are featured for guided admission planning.</p></div>
       <div class="float-card right"><strong>NEET-guided planning</strong><p>Eligibility, documents, visa flow, and university selection in one journey.</p></div>
-      <div class="float-card bottom"><strong>Free meeting CTA</strong><p>Visible across the site with a repeating popup every 3 minutes.</p></div>
+      <div class="float-card bottom"><strong>Free meeting CTA</strong><p>Visible across the site for quick student counselling access.</p></div>
       <div class="ribbon">MBBS<br>Abroad</div>
     </div>
   </div>
@@ -194,7 +366,12 @@
 
 <section class="section" style="background:#fff">
   <div class="container">
-    <div class="section-head"><span class="eyebrow">Core services</span><h2>Everything students need from shortlisting to departure</h2><p>We help students not only choose a university, but also move through the admission process smoothly, quickly, and with the right guidance.</p></div>
+    <div class="section-head">
+      <span class="eyebrow">Core services</span>
+      <h2>Everything students need from shortlisting to departure</h2>
+      <p>We help students not only choose a university, but also move through the admission process smoothly, quickly, and with the right guidance.</p>
+    </div>
+
     <div class="grid grid-4">
       <div class="service-card"><div class="icon"><i class="fa-solid fa-comments"></i></div><h3>Counselling</h3><p>Guidance on when to apply, where to apply, how to apply, and which university fits the student profile best.</p></div>
       <div class="service-card"><div class="icon"><i class="fa-solid fa-building-columns"></i></div><h3>University selection</h3><p>Shortlisting based on country, course duration, medium, recognition, student comfort, and budget level.</p></div>
@@ -203,21 +380,72 @@
     </div>
   </div>
 </section>
+
 <section class="section">
   <div class="container">
-    <div class="section-head"><span class="eyebrow">Destinations</span><h2>Countries currently featured for your client</h2><p>The client material shared so far is focused on Russia, Kyrgyzstan, Uzbekistan and Georgia, so the site structure keeps the destination offering clean and accurate.</p></div>
+    <div class="section-head">
+      <span class="eyebrow">Destinations</span>
+      <h2>Countries currently featured for your client</h2>
+      <p>The client material shared so far is focused on Russia, Kyrgyzstan, Uzbekistan and Georgia, so the site structure keeps the destination offering clean and accurate.</p>
+    </div>
+
     <div class="grid grid-2">
-      <article class="country-card"><img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=1200&q=80" alt="Russia"><div class="content"><span class="tag">6-year MBBS</span><h3 style="margin-top:14px">Study in Russia</h3><p>Recognized universities, clinical exposure, English-medium options in selected institutions, and budget-friendly city choices.</p><div class="meta"><span class="tag">Research + hospitals</span><span class="tag">FMGE-focused options</span></div><div style="margin-top:18px"><a class="btn btn-primary" href="study-in-russia.html">Explore Russia</a></div></div></article>
-      <article class="country-card"><img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80" alt="Kyrgyzstan"><div class="content"><span class="tag">5-year MBBS</span><h3 style="margin-top:14px">Study in Kyrgyzstan</h3><p>Affordable medical education, simpler admission flow, English-medium teaching, and a strong ecosystem for Indian students.</p><div class="meta"><span class="tag">Lower budget</span><span class="tag">Quick admission</span></div><div style="margin-top:18px"><a class="btn btn-primary" href="study-in-kyrgyzstan.html">Explore Kyrgyzstan</a></div></div></article>
-      <article class="country-card"><img src="assets/lufWPbnwo5DfOkr9UGAdyQtFBcJGg7Ph1R4a3r3N_x315JZfrLm4w4d14NpWkGXUtF8OxN9G-1z72B_5_p4QEOfGz7TtafKla4M9J7GuPMHKa2OW_D71QAU67W-JH4rcBn2GvR9Zxbs6VtobQC7eH1DUsI3Eh-KTBNRPO3GeDHagiWsoO9GIiZvHNR6ol_6d.jpg" alt="Uzbekistan"><div class="content"><span class="tag">5+1-year MBBS</span><h3 style="margin-top:14px">Study in Uzbekistan</h3><p>Affordable government medical universities, English-medium availability in selected institutions, and structured admission support.</p><div class="meta"><span class="tag">Government universities</span><span class="tag">Balanced budget</span></div><div style="margin-top:18px"><a class="btn btn-primary" href="study-in-uzbekistan.html">Explore Uzbekistan</a></div></div></article>
-      <article class="country-card"><img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=1200&q=80" alt="Georgia"><div class="content"><span class="tag">6-year MBBS</span><h3 style="margin-top:14px">Study in Georgia</h3><p>Modern medical universities, European exposure, English-medium programs, and globally oriented student life.</p><div class="meta"><span class="tag">European exposure</span><span class="tag">Modern campuses</span></div><div style="margin-top:18px"><a class="btn btn-primary" href="study-in-georgia.html">Explore Georgia</a></div></div></article>
+      <article class="country-card">
+        <img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=1200&q=80" alt="Russia">
+        <div class="content">
+          <span class="tag">6-year MBBS</span>
+          <h3 style="margin-top:14px">Study in Russia</h3>
+          <p>Recognized universities, clinical exposure, English-medium options in selected institutions, and budget-friendly city choices.</p>
+          <div class="meta"><span class="tag">Research + hospitals</span><span class="tag">FMGE-focused options</span></div>
+          <div style="margin-top:18px"><a class="btn btn-primary" href="study-in-russia.html">Explore Russia</a></div>
+        </div>
+      </article>
+
+      <article class="country-card">
+        <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80" alt="Kyrgyzstan">
+        <div class="content">
+          <span class="tag">5-year MBBS</span>
+          <h3 style="margin-top:14px">Study in Kyrgyzstan</h3>
+          <p>Affordable medical education, simpler admission flow, English-medium teaching, and a strong ecosystem for Indian students.</p>
+          <div class="meta"><span class="tag">Lower budget</span><span class="tag">Quick admission</span></div>
+          <div style="margin-top:18px"><a class="btn btn-primary" href="study-in-kyrgyzstan.html">Explore Kyrgyzstan</a></div>
+        </div>
+      </article>
+
+      <article class="country-card">
+        <img src="assets/lufWPbnwo5DfOkr9UGAdyQtFBcJGg7Ph1R4a3r3N_x315JZfrLm4w4d14NpWkGXUtF8OxN9G-1z72B_5_p4QEOfGz7TtafKla4M9J7GuPMHKa2OW_D71QAU67W-JH4rcBn2GvR9Zxbs6VtobQC7eH1DUsI3Eh-KTBNRPO3GeDHagiWsoO9GIiZvHNR6ol_6d.jpg" alt="Uzbekistan">
+        <div class="content">
+          <span class="tag">5+1-year MBBS</span>
+          <h3 style="margin-top:14px">Study in Uzbekistan</h3>
+          <p>Affordable government medical universities, English-medium availability in selected institutions, and structured admission support.</p>
+          <div class="meta"><span class="tag">Government universities</span><span class="tag">Balanced budget</span></div>
+          <div style="margin-top:18px"><a class="btn btn-primary" href="study-in-uzbekistan.html">Explore Uzbekistan</a></div>
+        </div>
+      </article>
+
+      <article class="country-card">
+        <img src="https://images.unsplash.com/photo-1565008576549-57569a49371d?auto=format&fit=crop&w=1200&q=80" alt="Georgia">
+        <div class="content">
+          <span class="tag">6-year MBBS</span>
+          <h3 style="margin-top:14px">Study in Georgia</h3>
+          <p>Modern medical universities, European exposure, English-medium programs, and globally oriented student life.</p>
+          <div class="meta"><span class="tag">European exposure</span><span class="tag">Modern campuses</span></div>
+          <div style="margin-top:18px"><a class="btn btn-primary" href="study-in-georgia.html">Explore Georgia</a></div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
+
 <section class="section">
   <div class="container split">
     <div>
-      <div class="section-head left"><span class="eyebrow">Admission process</span><h2>Admission process in abroad</h2><p>Studying abroad requires preparation and guidance to make a student an eligible candidate. We support the full process so that admission moves smoothly and effortlessly.</p></div>
+      <div class="section-head left">
+        <span class="eyebrow">Admission process</span>
+        <h2>Admission process in abroad</h2>
+        <p>Studying abroad requires preparation and guidance to make a student an eligible candidate. We support the full process so that admission moves smoothly and effortlessly.</p>
+      </div>
+
       <div class="grid grid-2">
         <div class="step-card"><div class="step-badge">1</div><h3>Application</h3><p>After counselling and university selection, the team applies to the selected university using the scanned documents and student details.</p></div>
         <div class="step-card"><div class="step-badge">2</div><h3>Registration</h3><p>Students pay the registration amount. After document approval from the university, registration in the admission process is completed.</p></div>
@@ -225,12 +453,14 @@
         <div class="step-card"><div class="step-badge">4</div><h3>Visa process</h3><p>After receiving the invitation letter, the head office applies for the visa. The process generally takes 2 to 3 weeks depending on the country and embassy.</p></div>
       </div>
     </div>
+
     <div class="visual-block">
       <img class="main" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Students consultation">
       <img class="small" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80" alt="Documents">
     </div>
   </div>
 </section>
+
 <section class="section compact" style="background:#fff">
   <div class="container process-grid">
     <div class="step-card"><div class="step-badge">5</div><h3>Travel arrangement</h3><p>After visa approval, the team provides batch travel dates, books tickets, arranges departure, briefs students, and receives them at the airport abroad.</p></div>
@@ -241,21 +471,283 @@
 
 <section class="section" style="background:#fff">
   <div class="container">
-    <div class="section-head"><span class="eyebrow">Featured universities</span><h2>Shortlisted university highlights</h2></div>
-    <div class="grid grid-3">
-      <div class="uni-card"><h3>Northern State Medical University</h3><p>Arkhangelsk, Russia · WHO, NMC, ECFMG · English/Russian · Best for research exposure and low cost of living.</p></div>
-      <div class="uni-card"><h3>Osh State University</h3><p>Osh, Kyrgyzstan · WHO, NMC, ECFMG · English · Best for strong clinical exposure and reputation.</p></div>
-      <div class="uni-card"><h3>International School of Medicine</h3><p>Bishkek, Kyrgyzstan · English · Known for better infrastructure, city life, and hospital affiliations.</p></div><div class="uni-card"><h3>Tashkent Medical Academy</h3><p>Tashkent, Uzbekistan · government medical university · latest fee and recognition to be confirmed.</p></div><div class="uni-card"><h3>Tbilisi State Medical University</h3><p>Tbilisi, Georgia · well-known medical university · consultation-based shortlist guidance.</p></div>
+    <div class="section-head">
+      <span class="eyebrow">Featured universities</span>
+      <h2>Shortlisted university highlights</h2>
+    </div>
+
+    <div class="grid grid-3 university-showcase">
+      <div class="uni-card">
+        <img class="uni-img" src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=900&q=80" alt="Northern State Medical University campus">
+        <h3>Northern State Medical University</h3>
+        <p>Arkhangelsk, Russia · WHO, NMC, ECFMG · English/Russian · Best for research exposure and low cost of living.</p>
+        <div class="uni-actions">
+          <a class="btn btn-outline" href="All UNIVERSITIES FEE STRUCTURE MASTER PDF.pdf" target="_blank" download>See Fee Structure</a>
+          <a class="btn btn-primary" href="https://wa.me/919623738266?text=Hi%20Shree%20EduWorld%2C%20I%20want%20fee%20structure%20for%20Northern%20State%20Medical%20University" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="uni-card">
+        <img class="uni-img" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80" alt="Osh State University campus">
+        <h3>Osh State University</h3>
+        <p>Osh, Kyrgyzstan · WHO, NMC, ECFMG · English · Best for strong clinical exposure and reputation.</p>
+        <div class="uni-actions">
+          <a class="btn btn-outline" href="All UNIVERSITIES FEE STRUCTURE MASTER PDF.pdf" target="_blank" download>See Fee Structure</a>
+          <a class="btn btn-primary" href="https://wa.me/919623738266?text=Hi%20Shree%20EduWorld%2C%20I%20want%20fee%20structure%20for%20Osh%20State%20University" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="uni-card">
+        <img class="uni-img" src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=900&q=80" alt="International School of Medicine campus">
+        <h3>International School of Medicine</h3>
+        <p>Bishkek, Kyrgyzstan · English · Known for better infrastructure, city life, and hospital affiliations.</p>
+        <div class="uni-actions">
+          <a class="btn btn-outline" href="All UNIVERSITIES FEE STRUCTURE MASTER PDF.pdf" target="_blank" download>See Fee Structure</a>
+          <a class="btn btn-primary" href="https://wa.me/919623738266?text=Hi%20Shree%20EduWorld%2C%20I%20want%20fee%20structure%20for%20International%20School%20of%20Medicine" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="uni-card">
+        <img class="uni-img" src="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?auto=format&fit=crop&w=900&q=80" alt="Tashkent Medical Academy campus">
+        <h3>Tashkent Medical Academy</h3>
+        <p>Tashkent, Uzbekistan · government medical university · latest fee and recognition to be confirmed.</p>
+        <div class="uni-actions">
+          <a class="btn btn-outline" href="All UNIVERSITIES FEE STRUCTURE MASTER PDF.pdf" target="_blank" download>See Fee Structure</a>
+          <a class="btn btn-primary" href="https://wa.me/919623738266?text=Hi%20Shree%20EduWorld%2C%20I%20want%20fee%20structure%20for%20Tashkent%20Medical%20Academy" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="uni-card">
+        <img class="uni-img" src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=900&q=80" alt="Tbilisi State Medical University campus">
+        <h3>Tbilisi State Medical University</h3>
+        <p>Tbilisi, Georgia · well-known medical university · consultation-based shortlist guidance.</p>
+        <div class="uni-actions">
+          <a class="btn btn-outline" href="All UNIVERSITIES FEE STRUCTURE MASTER PDF.pdf" target="_blank" download>See Fee Structure</a>
+          <a class="btn btn-primary" href="https://wa.me/919623738266?text=Hi%20Shree%20EduWorld%2C%20I%20want%20fee%20structure%20for%20Tbilisi%20State%20Medical%20University" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="uni-card">
+        <img class="uni-img" src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=900&q=80" alt="North Western University campus">
+        <h3>North Western University</h3>
+        <p>Updated as requested: SAMARA has been replaced by North Western University. Fee details can be shared through consultation.</p>
+        <div class="uni-actions">
+          <a class="btn btn-outline" href="All UNIVERSITIES FEE STRUCTURE MASTER PDF.pdf" target="_blank" download>See Fee Structure</a>
+          <a class="btn btn-primary" href="https://wa.me/919623738266?text=Hi%20Shree%20EduWorld%2C%20I%20want%20fee%20structure%20for%20North%20Western%20University" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
 <section class="section compact">
   <div class="container">
     <div class="cta-banner" style="display:grid;grid-template-columns:1.1fr .9fr;gap:20px;background:linear-gradient(135deg,var(--navy),#1547ab);padding:34px;border-radius:34px;color:#fff;box-shadow:var(--shadow)">
-      <div><span class="eyebrow" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.14);color:#fff">Free consultation</span><h2 style="margin:16px 0 10px;font-size:2.4rem;color:#fff">Need help choosing the right MBBS destination?</h2><p style="margin:0;color:rgba(255,255,255,.82);line-height:1.8">Book a free meeting and get guidance on university fit, documents, timeline, and visa planning.</p></div>
-      <div style="display:flex;align-items:center;justify-content:flex-start"><button class="btn btn-primary" data-open-meeting>Book Free Meeting</button></div>
+      <div>
+        <span class="eyebrow" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.14);color:#fff">Free consultation</span>
+        <h2 style="margin:16px 0 10px;font-size:2.4rem;color:#fff">Need help choosing the right MBBS destination?</h2>
+        <p style="margin:0;color:rgba(255,255,255,.82);line-height:1.8">Book a free meeting and get guidance on university fit, documents, timeline, and visa planning.</p>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:flex-start">
+        <button class="btn btn-primary" data-open-meeting>Book Free Meeting</button>
+      </div>
     </div>
   </div>
 </section>
-<footer class="footer"><div class="container footer-grid"><div class="brand"><a class="logo" href="index.html"><img src="assets/logo.png" alt="EduWorld International logo"><div class="logo-text"><strong style="color:#fff">EduWorld International</strong><span style="color:#b4c7f6">MBBS Abroad Consultancy</span></div></a><p style="margin-top:18px">A focused consultancy website for MBBS admissions in Russia, Kyrgyzstan, Uzbekistan and Georgia with counselling, documentation, visa support, and post-admission assistance.</p></div><div><h4>Quick Links</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="countries.html">Countries</a><a href="universities.html">Universities</a></div><div><h4>Study Options</h4><a href="study-in-russia.html">Study in Russia</a><a href="study-in-kyrgyzstan.html">Study in Kyrgyzstan</a><a href="study-in-uzbekistan.html">Study in Uzbekistan</a><a href="study-in-georgia.html">Study in Georgia</a><a href="contact.html">Book Consultation</a><a href="blog.html">Latest Articles</a></div><div><h4>Contact</h4><a href="mailto:shreeeduworldint@gmail.com">shreeeduworldint@gmail.com</a><a href="tel:+917378424424">+91 73784 24424</a><a href="tel:+919623738229">+91 96237 38229</a><a href="https://instagram.com/Shreeeduworldint" target="_blank">Instagram: Shreeeduworldint</a><p style="margin:8px 0 0">Free counselling available for students and parents.</p></div></div><div class="container subfooter"><span>© 2026 EduWorld International. All rights reserved.</span><span>Designed by BizwebIndia</span></div></footer><a class="whatsapp" href="https://wa.me/917378424424?text=Hi%20EduWorld%20International%2C%20I%20want%20free%20MBBS%20counselling." target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-<div class="modal-backdrop" id="meetingModal"><div class="modal"><button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button><div class="modal-side"><div><span class="eyebrow" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.14);color:#fff">Free consultation</span><h3>Book your free MBBS counselling meeting</h3><p>Speak with our team for university selection, eligibility review, documentation planning, and visa guidance for Russia, Kyrgyzstan, Uzbekistan or Georgia.</p></div><div class="card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.08);color:#fff;box-shadow:none"><strong>Popup reminder</strong><p style="margin:8px 0 0;color:rgba(255,255,255,.82)">This enquiry popup is configured to reappear every 3 minutes.</p></div></div><div class="contact-card" style="box-shadow:none"><h3 style="margin:0 0 12px;color:var(--navy)">Schedule a callback</h3><p style="margin:0 0 18px;color:var(--muted)">Fill in your details and our team will contact you.</p><form id="meetingForm" class="form-grid"><input class="control" name="name" placeholder="Student name" required><input class="control" name="phone" placeholder="Phone number" required><input class="control full" name="email" placeholder="Email address"><select class="control" name="country"><option>Interested country</option><option>Russia</option><option>Kyrgyzstan</option><option>Uzbekistan</option><option>Georgia</option></select><input class="control" name="date" type="date" aria-label="Preferred meeting date"><input class="control" name="time" type="time" aria-label="Preferred meeting time"><textarea class="control full" name="message" rows="5" placeholder="Tell us your class, NEET status, preferred budget and questions"></textarea><div class="booking-options full"><button class="btn btn-primary" type="submit"><i class="fa-brands fa-whatsapp"></i> Send on WhatsApp</button><a class="btn btn-outline" id="calendlyBtn" href="#" target="_blank" rel="noopener"><i class="fa-regular fa-calendar"></i> Open Calendar Booking</a></div><p class="form-note full">Free setup: WhatsApp works immediately. Formspree, Google Sheets and Calendar link are configured in <code>script.js</code>.</p></form></div></div></div><div class="notice" id="notice">Thanks. Your meeting request has been captured.</div><script src="script.js"></script></body></html>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Student Reviews</span>
+      <h2>What Our Students Say</h2>
+      <p>Real experiences shared by students studying MBBS abroad through Shree EduWorld International.</p>
+    </div>
+
+    <div class="reviews-slider">
+      <div class="reviews-track">
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Honestly, coming to Russia was a big decision for me, but things turned out much better than I expected. The university has really good labs and classrooms."</p>
+          <strong>Rushikesh Phad</strong>
+          <span>Northern State Medical University, Russia</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"My experience has been quite smooth till now. The professors are helpful, and the consultancy handled everything from admission to visa."</p>
+          <strong>Mahesh Kolpe</strong>
+          <span>Northern State Medical University, Russia</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Life here is actually pretty comfortable. There are many Indian students, so you don’t really feel homesick. The campus is nice."</p>
+          <strong>Sanskar Mane</strong>
+          <span>Northern State Medical University, Russia</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Studying in Kyrgyzstan has been a good experience so far. The cost of living is affordable, and the consultancy helped me choose based on my budget."</p>
+          <strong>Rushikesh Tandle</strong>
+          <span>Osh State Medical University, Kyrgyzstan</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"I was nervous before coming here, but things settled down quickly. There are many Indian students around, and overall it’s comfortable."</p>
+          <strong>Sanchi Turukmare</strong>
+          <span>Jalalabad International Medical University, Kyrgyzstan</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Uzbekistan is actually a nice place for MBBS. The classes are in English, teachers are supportive, and admission was very smooth."</p>
+          <strong>Sai Sudharsanam</strong>
+          <span>Asia International University, Uzbekistan</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"The university has really good facilities, especially for practical learning. We get proper hospital exposure, which is very important."</p>
+          <strong>Gaurav Munde</strong>
+          <span>Tambov State Medical University, Russia</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Adjusting to a new country was not easy at first, but slowly everything became normal. The university has modern classrooms and helpful faculty."</p>
+          <strong>Sandhya Devkate</strong>
+          <span>Northwestern State Medical University, Russia</span>
+        </div>
+
+        <!-- duplicate cards for smooth infinite loop -->
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"It’s been a good learning experience. The environment is safe, facilities are decent, and the consultancy team gave me confidence."</p>
+          <strong>Sumit Kanthale</strong>
+          <span>Amur State Medical University, Russia</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"I feel comfortable studying here. The environment is friendly, and there are many Indian students. The admission process was smooth."</p>
+          <strong>Heena Shaikh</strong>
+          <span>ISM Bishkek, Kyrgyzstan</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Everything has been going well. The university provides good education and practical training. I’m satisfied with my choice."</p>
+          <strong>Ranjit Sharma</strong>
+          <span>Tver State Medical University, Russia</span>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"My experience has been positive overall. The infrastructure is good, and studies are going well. The support made settling easier."</p>
+          <strong>Sandesh Sarode</strong>
+          <span>North Ossetian State Medical University, Russia</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="brand">
+      <a class="logo" href="index.html">
+        <img src="assets/logo.png" alt="EduWorld International logo">
+        <div class="logo-text">
+          <strong style="color:#fff">EduWorld International</strong>
+          <span style="color:#b4c7f6">MBBS Abroad Consultancy</span>
+        </div>
+      </a>
+      <p style="margin-top:18px">Shree EduWorld is a student-led guidance and counselling program designed to support aspiring students who wish to study abroad. It provides helpful advice, resources, and peer support to turn their dreams of international education into reality.</p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="countries.html">Countries</a>
+      <a href="universities.html">Universities</a>
+    </div>
+
+    <div>
+      <h4>Study Options</h4>
+      <a href="study-in-russia.html">Study in Russia</a>
+      <a href="study-in-kyrgyzstan.html">Study in Kyrgyzstan</a>
+      <a href="study-in-uzbekistan.html">Study in Uzbekistan</a>
+      <a href="study-in-georgia.html">Study in Georgia</a>
+      <a href="contact.html">Book Consultation</a>
+      <a href="blog.html">Latest Articles</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:shreeeduworldint@gmail.com">shreeeduworldint@gmail.com</a>
+      <a href="tel:+919623738266">+91 96237 38266</a>
+      <a href="tel:+917378424424">+91 73784 24424</a>
+      <a href="tel:+919623738229">+91 96237 38229</a>
+      <a href="https://instagram.com/Shreeeduworldint" target="_blank">Instagram: Shreeeduworldint</a>
+      <p style="margin:8px 0 0">Free counselling available for students and parents.</p>
+    </div>
+  </div>
+
+  <div class="container subfooter">
+    <span>© 2026 EduWorld International. All rights reserved.</span>
+    <span>Designed by BizwebIndia</span>
+  </div>
+
+  <p>Offices: Pune, Latur, Nanded, Beed, Parbhani</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919623738266?text=Hi%20Shree%20EduWorld%20International%2C%20I%20want%20free%20MBBS%20counselling." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<div class="modal-backdrop" id="meetingModal">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-side">
+      <div>
+        <span class="eyebrow" style="background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.14);color:#fff">Free consultation</span>
+        <h3>Book your free MBBS counselling meeting</h3>
+        <p>Speak with our team for university selection, eligibility review, documentation planning, and visa guidance for Russia, Kyrgyzstan, Uzbekistan or Georgia.</p>
+      </div>
+    </div>
+    <div class="contact-card" style="box-shadow:none">
+      <h3 style="margin:0 0 12px;color:var(--navy)">Schedule a callback</h3>
+      <p style="margin:0 0 18px;color:var(--muted)">Fill in your details and our team will contact you.</p>
+      <form id="meetingForm" class="form-grid">
+        <input class="control" name="name" placeholder="Student name" required>
+        <input class="control" name="phone" placeholder="Phone number" required>
+        <input class="control full" name="email" placeholder="Email address">
+        <select class="control" name="country">
+          <option>Interested country</option>
+          <option>Russia</option>
+          <option>Kyrgyzstan</option>
+          <option>Uzbekistan</option>
+          <option>Georgia</option>
+        </select>
+        <input class="control" name="date" type="date" aria-label="Preferred meeting date">
+        <input class="control" name="time" type="time" aria-label="Preferred meeting time">
+        <textarea class="control full" name="message" rows="5" placeholder="Tell us your class, NEET status, preferred budget and questions"></textarea>
+        <div class="booking-options full">
+          <button class="btn btn-primary" type="submit">
+            <i class="fa-brands fa-whatsapp"></i> Send on WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div><div class="notice" id="notice">Thanks. Your meeting request has been captured.</div>
+<script src="script.js"></script>
+
+</body>
+</html>
+
