@@ -1,36 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://www.shreeeduworld.com/index.html</loc>
+    <loc>https://www.shreeeduworldint.com/</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>1.00</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/about.html</loc>
+    <loc>https://www.shreeeduworldint.com/about.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/services.html</loc>
+    <loc>https://www.shreeeduworldint.com/services.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.85</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/countries.html</loc>
+    <loc>https://www.shreeeduworldint.com/countries.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.90</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/universities.html</loc>
+    <loc>https://www.shreeeduworldint.com/universities.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.90</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/blog.html</loc>
+    <loc>https://www.shreeeduworldint.com/blog.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.75</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/contact.html</loc>
+    <loc>https://www.shreeeduworldint.com/contact.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/study-in-russia.html</loc>
+    <loc>https://www.shreeeduworldint.com/study-in-russia.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.95</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/study-in-kyrgyzstan.html</loc>
+    <loc>https://www.shreeeduworldint.com/study-in-uzbekistan.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.95</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/study-in-uzbekistan.html</loc>
+    <loc>https://www.shreeeduworldint.com/study-in-kyrgyzstan.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.95</priority>
   </url>
+
   <url>
-    <loc>https://www.shreeeduworld.com/study-in-georgia.html</loc>
+    <loc>https://www.shreeeduworldint.com/study-in-georgia.html</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.95</priority>
   </url>
+
 </urlset>
